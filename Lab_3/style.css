@@ -1,0 +1,22 @@
+table {
+    border: solid 1px black;
+    font-size: 22px;
+  }
+  th {
+    font-style: bold;
+    border: solid 1px black;
+  }
+  td {
+    border: solid 1px black;
+  }
+  svg text {
+    font: 8px Verdana;
+    }
+    svg path, line {
+        fill: none;
+        stroke: #333333;
+        width: 1px;
+    }
+    svg .grid-line {
+    stroke: black; shape-rendering: crispedges; stroke-opacity: 0.1;
+    }

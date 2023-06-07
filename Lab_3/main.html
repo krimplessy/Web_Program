@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://d3js.org/d3.v7.min.js"> </script>
+</head>
+
+<body>
+    <h3>Список самых высоких зданий</h3>
+    <div>
+        <form>
+            <p>Значениe по оси OX:</p>
+            <input type="radio" class="OX" name="ox" value="Страна" checked>Страна<br>
+            <input type="radio" class="OX" name="ox" value="Год">Год<br>
+            <p>Значениe по оси OY:</p>
+            <input type="checkbox" class="OY" name="oy" value="0" checked>Максимальная высота<br>
+            <input type="checkbox" class="OY" name="oy" value="1">Минимальная высота<br>
+            <p>Тип диаграммы:</p>
+            <input type="radio" class="Type" name="type" value="Точечная" checked>Точечная<br>
+            <input type="radio" class="Type" name="type" value="Столбчатая">Столбчатая<br>
+            <p>
+                <input type=button id="build" value="Построить" onclick="drawGraph(this.form)">
+            </p>
+        </form>
+        <svg height="5"></svg>
+    </div>
+    <div class="table">
+        <p>
+            <input type=button id="showTable" value="Показать таблицу">
+        </p>
+        <table>
+        </table>
+    </div>
+</body>
+<script src="program.js"></script>
+<script src="data.js"></script>
+<script>drawGraph(this.form)</script>
+
+</html>

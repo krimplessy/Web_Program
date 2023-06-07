@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://d3js.org/d3.v7.min.js"> </script>
+</head>
+
+<body>
+    <div>
+        <form>
+            <p>
+                <label>Укажите интервал по оси OX:
+                    <input type="number" id="NumberMin" name="kolvo" min="-100" value="-3">
+                    <input type="number" id="NumberMax" name="kolvo" max="100" value="5">
+                    <input type=button id="build" value="Построить" onclick="drawGraph(this.form)">
+            </p>
+        </form>
+        <svg height="5"></svg>
+    </div>
+</body>
+<script src="program.js"></script>
+<script>drawGraph(this.form)</script>
+</html>
